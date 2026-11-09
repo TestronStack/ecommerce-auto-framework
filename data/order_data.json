@@ -1,0 +1,8 @@
+{
+  "shipping": {
+    "shippingName": "张三",
+    "shippingPhone": "13800001111",
+    "shippingAddress": "深圳市南山区科技园1号楼",
+    "paymentMethod": "ALIPAY"
+  }
+}

@@ -1,0 +1,21 @@
+# Python 编译产物
+__pycache__/
+*.py[cod]
+*.pyo
+
+# pytest 缓存
+.pytest_cache/
+
+# 测试报告产物（每次运行重新生成，不纳入版本库）
+reports/
+
+# Playwright 登录态文件（内含 JWT Token，严禁提交）
+tests/auth_state.json
+
+# IDE
+.idea/
+.vscode/
+
+# 系统文件
+.DS_Store
+Thumbs.db

@@ -1,0 +1,25 @@
+{
+  "update_user": [
+    {
+      "case_name": "只更新手机号",
+      "payload": { "phone": "13900001111" },
+      "expect_code": 200
+    },
+    {
+      "case_name": "只更新地址",
+      "payload": { "address": "深圳市南山区科技园" },
+      "expect_code": 200
+    },
+    {
+      "case_name": "同时更新手机号和地址",
+      "payload": { "phone": "13900002222", "address": "深圳市福田区" },
+      "expect_code": 200
+    },
+    {
+      "case_name": "更新不存在的用户",
+      "payload": { "phone": "13900003333" },
+      "expect_code": 404,
+      "user_id": 999999
+    }
+  ]
+}
