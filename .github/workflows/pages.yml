@@ -29,6 +29,9 @@ jobs:
 
       - name: 配置 Pages
         uses: actions/configure-pages@v5
+        with:
+          # 若仓库尚未启用 Pages，自动创建（需要 pages: write 权限）
+          enablement: true
 
       - name: 上传报告产物
         uses: actions/upload-pages-artifact@v3
